@@ -7,7 +7,13 @@
     "start": "node server.js",
     "dev": "node --watch server.js"
   },
-  "keywords": ["parking", "booking", "express", "mysql", "jwt"],
+  "keywords": [
+    "parking",
+    "booking",
+    "express",
+    "mysql",
+    "jwt"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
