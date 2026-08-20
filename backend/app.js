@@ -8,13 +8,10 @@ const bookingRoutes = require("./routes/bookingRoutes");
 const errorHandler = require("./middleware/errorHandler");
 
 const app = express();
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://parking-slot1.netlify.app"
-];
+
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: process.env.ORIGIN,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
